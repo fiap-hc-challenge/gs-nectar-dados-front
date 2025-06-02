@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #00775F;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.topo {
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*----------------- logo --------------*/
+
+.header-content .img-logo {
+    margin-left: 40px;
+}
+
+.header-content .start-header .img-logo img {
+    width: 30px;
+}
+
+.start-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/*---------- menu mobile ---------------*/
+
+.menu {
+    display: none;
+}
+
+.btn-abrir-menu .icon {
+    color: #fff;
+    font-size: 4rem;
+    display: block;
+    margin: 0 20px;
+}
+
+.btn-abrir-menu .icon:focus {
+    outline: 2.5px solid #000;
+}
+
+.menu-mobile {
+    background: #00775F;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    display: block;
+}
+
+.menu-mobile.abir-menu {
+    width: 50%;
+}
+
+.menu-mobile.abir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar .icon {
+    color: white;
+    font-size: 3rem;
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu-mobile nav ul #active {
+    background-color: white;
+    color: #00775F;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    padding: 20px 8%;
+    gap: 70px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: white;
+    color: #00775F;
+}
+
+.overlay-menu {
+    background-color: #0000009c;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+}
+
+.header-content .input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 24px;
+    background-color: rgba(239, 148, 121, 0.20);
+    max-width: 200px;
+}
+
+.header-content .input-wrapper input {
+    font-size: 1.6rem;
+    color: #2C2C2C;
+    background-color: transparent;
+    border: none;
+    width: 90%;
+}
+
+.header-content .input-wrapper button {
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.header-content .container-search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.overlay-menu {
+    background-color: #0000009c;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+}
