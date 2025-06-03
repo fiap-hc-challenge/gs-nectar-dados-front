@@ -196,8 +196,10 @@ header {
     font-size: 1.2rem;
     line-height: 2rem;
     margin: 16px 0;
+    max-width: 500px;
 }
 
 .sobre img{
     width: 70%;
+    max-width: 300px;
 }
