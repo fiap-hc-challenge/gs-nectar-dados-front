@@ -20,6 +20,8 @@
     max-width: 400px;
 }
 
+/*----------------- form -----------------*/
+
 .contact-form form{
     position: absolute;
     top: 220px;
@@ -93,4 +95,47 @@
     font-weight: 600;
     cursor: pointer;
     margin-top: 16px;
+}
+
+
+
+/*----------------- contact info -----------------*/
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 480px 0 24px;
+    gap: 16px;
+
+}
+
+.contact-info article{
+    background: #003B30;
+    padding: 24px 24px;
+    border-radius: 8px;
+}
+
+.contact-info .info-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.contact-info .info-top img{
+    width: 28px;
+}
+
+.contact-info .info-top h3{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact-info article p{
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
 }
