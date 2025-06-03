@@ -54,27 +54,28 @@
 }
 
 .obj .card-obj article{
-    background: #7B9396;
+    background: #003B30;
     padding: 16px;
     border-radius: 8px;
     margin: 8px;
     width: 70%;
     max-width: 250px;
-    height: 200px;
+    height: 220px;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .obj .card-obj article h3{
     font-size: 1.8rem;
     color: #fff;
-    font-weight: 500;
-    margin-bottom: 8px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .obj .card-obj article p{
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 2rem;
     color: #fff;
+    font-weight: 300;
 }
 
 
@@ -103,7 +104,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 56px;
 }
 
 .team .gp-card .card{
