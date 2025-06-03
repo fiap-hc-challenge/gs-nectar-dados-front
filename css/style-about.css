@@ -3,30 +3,29 @@
     display: flex;
     flex-direction: column-reverse;
     padding: 104px 20px 64px;
-    align-items: center;
 }
 
 .sobre .info-sobre h2{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
 }
 
 .sobre .info-sobre p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     margin: 16px 0;
     max-width: 500px;
 }
 
 .sobre img{
-    width: 70%;
+    width: 60%;
     max-width: 300px;
 }
 
 
 /*----------------- seção objetivos --------------*/
 .obj h2{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 16px;
@@ -45,20 +44,20 @@
     padding: 16px;
     border-radius: 8px;
     margin: 8px;
-    width: 60%;
+    width: 70%;
     max-width: 250px;
-    height: 180px;
+    height: 200px;
 }
 
 .obj .card-obj article h3{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: 8px;
 }
 
 .obj .card-obj article p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6rem;
     color: #fff;
 }
