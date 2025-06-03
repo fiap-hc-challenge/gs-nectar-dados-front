@@ -125,48 +125,6 @@ header {
     color: #00775F;
 }
 
-.overlay-menu {
-    background-color: #0000009c;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-    display: none;
-}
-
-.header-content .input-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 24px;
-    background-color: rgba(239, 148, 121, 0.20);
-    max-width: 200px;
-}
-
-.header-content .input-wrapper input {
-    font-size: 1.6rem;
-    color: #2C2C2C;
-    background-color: transparent;
-    border: none;
-    width: 90%;
-}
-
-.header-content .input-wrapper button {
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.header-content .container-search button img {
-    width: 20px;
-    height: 20px;
-}
 
 .overlay-menu {
     background-color: #0000009c;
@@ -187,7 +145,7 @@ header {
         display: block;
     }
 
-    .topo .box-redes-sociais {
+    .header-content .topo .box-redes-sociais {
         display: flex;
         background: transparent;
         justify-content: flex-end;
@@ -196,14 +154,14 @@ header {
         padding-top: 8px;
     }
 
-    .topo .box-redes-sociais a {
+    .header-content .topo .box-redes-sociais li a {
         text-decoration: none;
-        color: #fff;
+        color: #003B30;
         font-size: 2rem;
         overflow: hidden;
     }
 
-    .topo .box-redes-sociais li {
+    .header-content .topo .box-redes-sociais li {
         list-style: none;
     }
 
@@ -249,7 +207,7 @@ header {
     .menu ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 16px 0;
     }
 
