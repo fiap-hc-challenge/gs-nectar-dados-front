@@ -7,7 +7,7 @@
 
 .sobre .info-sobre h2{
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .sobre .info-sobre p {
@@ -19,14 +19,14 @@
 
 .sobre img{
     width: 60%;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 
 /*----------------- seção objetivos --------------*/
 .obj h2{
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 16px;
 }
@@ -47,6 +47,7 @@
     width: 70%;
     max-width: 250px;
     height: 200px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .obj .card-obj article h3{
@@ -60,4 +61,62 @@
     font-size: 1.4rem;
     line-height: 1.6rem;
     color: #fff;
+}
+
+
+/*----------------- seção equipe --------------*/
+.team {
+    margin: 48px 20px;
+}
+
+.team h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team h2 strong{
+    font-weight: 700;
+    background-color: #00775F;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+
+.team .gp-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.team .gp-card .card{
+    text-align: center;
+}
+
+.team .gp-card .card .card-image img{
+    width: 200px;
+}
+
+.team .gp-card .card .card-info h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #003B30;
+}
+
+.team .gp-card .card .card-info .paragraph-about{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.team .gp-card .card .card-info .paragraph-about p{
+    color: #003B30;
 }
