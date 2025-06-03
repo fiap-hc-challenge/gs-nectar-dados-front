@@ -2,11 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 50px 24px 0;
     background: #00775F33;
-    min-height: 50vh;
+    min-height: 70vh;
     position: relative;
+}
+
+.contact-form .text-contact{
+    padding-top: 80px;
 }
 
 
@@ -17,14 +21,15 @@
 
 .contact-form .text-contact h1{
     font-weight: 600;
-    max-width: 400px;
+    max-width: 300px;
+    font-size: 2rem;
 }
 
 /*----------------- form -----------------*/
 
 .contact-form form{
     position: absolute;
-    top: 220px;
+    top: 260px;
     background: #fff;
     border-radius: 14px;
     padding: 20px;
@@ -45,7 +50,6 @@
 .contact-form form fieldset .dados{
     display: flex;
     flex-direction: column;
-    gap: 4px;
     margin: 12px 0;
 }
 
@@ -60,7 +64,7 @@
 .contact-form form fieldset .dados input{
     border: none;
     border-bottom: 2px solid #91918F;
-    padding: 8px;
+    padding: 4px;
 }
 
 .contact-form form fieldset .dados textarea{
@@ -105,9 +109,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 480px 0 24px;
+    padding: 380px 0 24px;
     gap: 16px;
-
 }
 
 .contact-info article{
@@ -138,4 +141,53 @@
     font-size: 1.4rem;
     text-align: center;
     font-weight: 300;
+}
+
+
+/*----------------- medie querie 768px -----------------*/
+@media (min-width: 768px) {
+    .contact-form{
+        justify-content: space-between;
+        padding: 10% 15% 0;
+        min-height: 350px;
+    }
+
+    .contact-form .text-contact h1{
+        max-width: 320px;
+        font-size: 2.4rem;
+    }
+
+    .contact-form form{
+        right: 5%;
+        top: 140px;
+    }
+
+    .contact-info{
+        padding: 350px 0 24px;
+    }
+}
+
+
+/*----------------- media querie 992px -----------------*/
+@media (min-width: 992px) {
+    .contact-form{
+        justify-content: space-between;
+        padding: 10% 200px 0;
+        min-height: 350px;
+    }
+
+    .contact-form form{
+        right: 300px;
+        top: 140px;
+        width: 350px;
+        padding: 24px;
+    }
+
+    .contact-form .text-contact{
+    padding-top: 40px;
+}
+
+    .contact-info{
+        padding: 350px 0 24px;
+    }
 }
