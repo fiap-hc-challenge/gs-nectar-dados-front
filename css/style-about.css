@@ -1,0 +1,24 @@
+/*----------------- seção sobre --------------*/
+.sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 104px 20px;
+    align-items: center;
+}
+
+.sobre .info-sobre h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sobre .info-sobre p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 16px 0;
+    max-width: 500px;
+}
+
+.sobre img{
+    width: 70%;
+    max-width: 300px;
+}
