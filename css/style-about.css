@@ -2,7 +2,7 @@
 .sobre {
     display: flex;
     flex-direction: column-reverse;
-    padding: 104px 20px;
+    padding: 104px 20px 64px;
     align-items: center;
 }
 
@@ -21,4 +21,44 @@
 .sobre img{
     width: 70%;
     max-width: 300px;
+}
+
+
+/*----------------- seção objetivos --------------*/
+.obj h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.obj .card-obj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.obj .card-obj article{
+    background: #7B9396;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 8px;
+    width: 60%;
+    max-width: 250px;
+    height: 180px;
+}
+
+.obj .card-obj article h3{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.obj .card-obj article p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #fff;
 }
