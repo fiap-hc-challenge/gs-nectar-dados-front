@@ -24,6 +24,19 @@
 
 
 /*----------------- seção objetivos --------------*/
+.obj{
+    position: relative;
+}
+
+.obj .img-team{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px; /* ajuste conforme o necessário */
+    z-index: -1;
+    opacity: 0.4; /* opcional: para não ficar muito forte */
+}
+
 .obj h2{
     font-size: 2.4rem;
     font-weight: 700;
@@ -119,4 +132,14 @@
 
 .team .gp-card .card .card-info .paragraph-about p{
     color: #003B30;
+}
+
+.team .gp-card .card .card-icons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.team .gp-card .card .card-icons img{
+    width: 28px;
 }
