@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style-about.css">
+    <link rel="stylesheet" href="../css/style-contact.css">
     <script src="../js/index.js" defer></script>
 
     <!-- Ícones do Font Awesome -->
@@ -91,29 +91,29 @@
 
             <form novalidate>
                 <fieldset>
-                    <legend>Dados para contato</legend>
-                    <div>
-                        <label for="idNome">Nome:</label>
-                        <input type="text" name="nome" id="idNome" placeholder="Digite o seu nome*" minlength="3" maxlength="100"
+                    <legend>Nos envie uma mensagem</legend>
+                    <div class="dados">
+                        <label for="idNome">Nome<strong>*</strong></label>
+                        <input type="text" name="nome" id="idNome" minlength="3" maxlength="100"
                             required type="text">
                     </div>
-                    <div>
-                        <label for="idEmail">Email:</label>
-                        <input type="email" name="email" id="idEmail" placeholder="Digite o seu email*" minlength="5" maxlength="50"
+                    <div class="dados">
+                        <label for="idEmail">E-mail<strong>*</strong></label>
+                        <input type="email" name="email" id="idEmail" minlength="5" maxlength="50"
                             required type="email">
                     </div>
-                    <div>
-                        <label for="idTel">Telefone:</label>
-                        <input type="tel" name="tel" id="idTel" placeholder="Digite o seu telefone*" minlength="10" maxlength="15"
-                            required type="tel" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">>
+                    <div class="dados">
+                        <label for="idTel">Telefone<strong>*</strong></label>
+                        <input type="tel" name="tel" id="idTel" minlength="10" maxlength="15"
+                            required type="tel" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">
                     </div>
-                    <div>
+                    <div class="dados">
                         <label for="mensagem"></label>
                         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..."
                             required></textarea>
                     </div>
-                    <div>
-                        <button type="reset" id="btnReset">Limpar formulário</button>
+                    <div class="dados">
+                        <button type="reset" id="btnReset">Limpar Formulário</button>
                         <button type="submit" id="btnEnviar">Enviar</button>
                     </div>
                 </fieldset>

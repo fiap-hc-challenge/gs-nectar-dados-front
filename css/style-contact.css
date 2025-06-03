@@ -1,0 +1,96 @@
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 24px 0;
+    background: #00775F33;
+    min-height: 50vh;
+    position: relative;
+}
+
+
+.contact-form .text-contact h2{
+    color: #91918F;
+    font-weight: 600;
+}
+
+.contact-form .text-contact h1{
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.contact-form form{
+    position: absolute;
+    top: 220px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form fieldset{
+    border: none;
+}
+
+.contact-form form fieldset legend{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.contact-form form fieldset .dados{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 12px 0;
+}
+
+.contact-form form fieldset .dados label{
+    font-size: 1.2rem;
+}
+
+.contact-form form fieldset .dados label strong{
+    color: #00775F;
+}
+
+.contact-form form fieldset .dados input{
+    border: none;
+    border-bottom: 2px solid #91918F;
+    padding: 8px;
+}
+
+.contact-form form fieldset .dados textarea{
+    padding: 8px;
+    border: 2px solid #91918F;
+    border-radius: 8px;
+    resize: none;
+}
+
+.contact-form form fieldset .dados input:focus-visible, textarea:focus-visible {
+    outline: #00775F auto 1px;
+}
+
+.contact-form form fieldset .dados #btnReset{
+    border: none;
+    background: transparent;
+    color: #00775F;
+    text-align: start;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.contact-form form fieldset .dados #btnEnviar{
+    background: #00775F;
+    color: #fff;
+    width: 50%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+}
