@@ -4,9 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #484847;
 }
 
 html {
@@ -176,4 +177,27 @@ header {
     left: 0;
     z-index: 9999999;
     display: none;
+}
+
+/*----------------- seção sobre --------------*/
+.sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 104px 20px;
+    align-items: center;
+}
+
+.sobre .info-sobre h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sobre .info-sobre p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 16px 0;
+}
+
+.sobre img{
+    width: 70%;
 }
