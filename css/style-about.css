@@ -14,12 +14,13 @@
     font-size: 1.4rem;
     line-height: 2rem;
     margin: 16px 0;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .sobre img{
     width: 60%;
     max-width: 200px;
+    height: auto;
 }
 
 
@@ -142,4 +143,49 @@
 
 .team .gp-card .card .card-icons img{
     width: 28px;
+}
+
+
+
+/*----------------- media querie 728px --------------*/
+@media (min-width: 728px) {
+    .sobre{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding-top: 130px;
+    }
+
+    .sobre img{
+        max-width: 250px;
+    }
+}
+
+
+
+/*----------------- media querie 992px --------------*/
+@media (min-width: 992px){
+    .obj .card-obj article{
+        max-width: 220px;
+        height: 240px;
+    }
+
+    .sobre .info-sobre p{
+        font-size: 1.6rem;
+        max-width: 500px;
+    }
+
+    .sobre img{
+        max-width: 280px;
+    }
+}
+
+
+
+/*----------------- media querie 1300px --------------*/
+@media (min-width: 1300px){
+    .obj .img-team{
+        width: 300px;
+    }
 }
