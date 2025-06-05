@@ -1,0 +1,107 @@
+/*----------------------------- seção perguntas e respostas --------------------*/
+
+.container-faq{
+    padding: 100px 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container-faq fieldset{
+    border: none;
+    
+}
+
+.container-faq legend{
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #00775F;
+}
+
+.faq{
+    width: 100%;
+    list-style: none;
+}
+
+
+.faq li{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #9e9c9c;
+    border-radius: 8px;
+}
+
+.faq li label{
+    padding: 15px 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #565246;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq li label:hover{
+    background-color: #e0dcdc;
+}
+
+.faq li label:focus{
+    outline: 2px solid #000000;
+}
+
+.faq li label span{
+    display: inline-block;
+    padding: 8px;
+    background-color: #003B30;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.faq li label::before{
+    content: url(../img/arrow-drop.png);
+    margin-right: 10px;
+    font-size: 2.4rem;
+}
+
+.faq input[type="radio"]{
+    display: none;
+}
+
+.faq .resposta{
+    padding: 0 14px;
+    background-color: #fff;
+    line-height: 2em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s, padding .3s;
+}
+
+.faq .resposta p{
+    font-size: 1.8rem;
+    color: #606267;
+}
+
+.faq input[type="radio"]:checked + label{
+    background-color: #EBEBEB;
+    color: #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+.faq input[type="radio"]:checked + label::before{
+    content: url(../img/arrow-up.png);
+}
+
+
+.faq input[type="radio"]:checked + label + .resposta{
+    max-height: 400px;
+    padding: 10px 15px 20px;
+    background-color: #EBEBEB;
+    color: #606267;
+    border-radius: 0 0 10px 10px;
+}
