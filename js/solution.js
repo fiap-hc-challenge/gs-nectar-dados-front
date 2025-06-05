@@ -2,7 +2,7 @@ document.getElementById("weather-form").addEventListener("submit", async functio
     e.preventDefault();
 
     const city = document.getElementById("city-input").value.trim();
-    const apiKey = "1bd88d602125f912e04266d35d8437e1";
+    const apiKey = "0bd88d602125f912e04266d35d8437e1";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=pt_br&units=metric`;
 
     const resultDiv = document.getElementById("weather-result");
@@ -25,7 +25,7 @@ document.getElementById("weather-form").addEventListener("submit", async functio
             } else if (temperatura <= 15 && umidade < 40) {
                 alerta = "⚠️ Risco de doenças respiratórias por clima seco e frio. Hidrate-se e evite locais fechados.";
             } else if (clima.includes("rain") && umidade >= 80) {
-                alerta = "🌧️  Atenção com enchentes e doenças transmitidas pela água em áreas vulneráveis.";
+                alerta = "🌧️ Atenção com enchentes e doenças transmitidas pela água em áreas vulneráveis.";
             } else if (temperatura > 35) {
                 alerta = "⚠️ Onda de calor: risco de desidratação e insolação, especialmente para crianças e idosos.";
             } else {
