@@ -46,4 +46,26 @@ form button {
     transition: background 0.3s;
 }
 
+form button:hover {
+    background-color: #0097a7;
+}
+
+.weather-result {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-result h2 {
+    margin-bottom: 10px;
+}
+
+.weather-result p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
 
