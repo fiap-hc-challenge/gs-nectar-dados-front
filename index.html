@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style-solution.css">
     <script src="./js/index.js" defer></script>
+    <script src="/js/solution.js" defer></script>
 
     <!-- Ícones do Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -80,6 +82,17 @@
             </div>
         </div>
     </header>
+    <section class="container">
+        <main>
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Digite a cidade" autocomplete="off" required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="weather-result" id="weather-result">
+            </div>
+        </main>
+    </section>
+    
 </body>
 
 </html>
