@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style-solution.css">
     <script src="./js/index.js" defer></script>
 
     <!-- Ícones do Font Awesome -->
@@ -16,6 +17,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Nectar de Dados</title>
+
+    <script src="/js/solution.js" defer></script>
 </head>
 
 <body>
@@ -80,6 +83,17 @@
             </div>
         </div>
     </header>
+    <section class="container">
+        <main>
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Digite a cidade" autocomplete="off" required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="weather-result" id="weather-result">
+            </div>
+        </main>
+    </section>
+    
 </body>
 
 </html>
