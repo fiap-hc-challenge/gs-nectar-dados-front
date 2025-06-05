@@ -67,5 +67,16 @@ form button:hover {
     margin-top: 5px;
 }
 
+.alerta {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+
 
 
