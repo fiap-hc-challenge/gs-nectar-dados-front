@@ -29,6 +29,15 @@ main {
     gap: 20px;
 }
 
+form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
 form input {
     flex: 1;
     padding: 12px;
@@ -76,7 +85,3 @@ form button:hover {
     color: #856404;
     border: 1px solid #ffeeba;
 }
-
-
-
-
