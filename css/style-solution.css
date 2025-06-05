@@ -15,3 +15,17 @@ body, html {
     justify-content: center;
     align-items: center;
 }
+
+main {
+    min-height: 60vh;
+    width: 90vw;
+    max-width: 500px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
