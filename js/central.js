@@ -117,3 +117,36 @@ formulario.addEventListener('submit', (event) => {
 
     formulario.reset();
 });
+
+
+
+
+
+
+// Controle de acordeon: permite desmarcar a resposta aberta
+let lastChecked = null;
+
+document.querySelectorAll('.faq input[type="radio"]').forEach(radio => {
+    radio.addEventListener('click', function () {
+        const label = this.nextElementSibling;
+        const resposta = label.nextElementSibling;
+
+        // Se clicar novamente no mesmo item, desmarca
+        if (this === lastChecked) {
+            this.checked = false;
+            lastChecked = null;
+
+            // Acessibilidade: atualizar aria-expanded para false
+            if (label) label.setAttribute('aria-expanded', 'false');
+        } else {
+            // Atualiza referência para o novo item
+            lastChecked = this;
+
+            // Acessibilidade: marcar todos os outros como fechados
+            document.querySelectorAll('.faq label').forEach(lbl => lbl.setAttribute('aria-expanded', 'false'));
+
+            // Atualiza o novo label como aberto
+            if (label) label.setAttribute('aria-expanded', 'true');
+        }
+    });
+});

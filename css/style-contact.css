@@ -35,6 +35,7 @@
     padding: 20px;
     width: 300px;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .contact-form form fieldset {
@@ -152,7 +153,7 @@ textarea:focus-visible {
 /*-------------------- aviso flutuante ------------------------*/
 #mensagem-flutuante {
     color: #fff;
-    background-color: #003B30;
+    background-color: #00775F;
     font-size: 1.4rem;
     font-weight: 600;
     border-radius: 10px;
