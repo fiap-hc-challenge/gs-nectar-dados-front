@@ -18,7 +18,7 @@ header {
     color: #fff;
     font-size: 2.6rem;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 24px 0;
     margin-left: 34px;
     max-width: 300px;
 }
@@ -155,7 +155,7 @@ header {
 }
 
 
-.container-monitoramento h2 {
+.container-monitoramento #h2 {
     color: #003B30;
     font-size: 2.4rem;
     font-weight: 700;
@@ -175,7 +175,7 @@ header {
 
 .container-solution {
     margin: 0 auto;
-    min-height: 80vh;
+    min-height: 400px;
     width: 90vw;
     max-width: 500px;
     background-color: #003B30;
@@ -286,3 +286,47 @@ form button:hover {
 
 
 
+/*------------------- medie querie 768px -------------------*/
+@media (min-width: 768px) {
+    .hero {
+        background-image: url(../img/fundo-index.png);
+        height: 500px;
+    }
+
+    .hero h1, .hero p, .hero .button-topo{
+        margin-left: 10rem;
+    }
+}
+
+
+/*------------------- medie querie 992px -------------------*/
+@media (min-width: 992px) {
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero p{
+        font-size: 1.6rem;
+    }
+
+    .container-entenda{
+        padding: 100px 34px;
+    }
+}
+
+
+/*------------------- medie querie 1300px -------------------*/
+@media (min-width: 1300px) {
+    .hero h1, .hero p, .hero .button-topo{
+        margin-left: 14rem;
+    }
+
+    .container-entenda .text-entenda h2{
+        font-size: 2.8rem;
+    }
+
+    .container-entenda .text-entenda p{
+        font-size: 1.8rem;
+        max-width: 800px;
+    }
+}
