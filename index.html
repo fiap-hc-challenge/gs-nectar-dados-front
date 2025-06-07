@@ -67,12 +67,13 @@
                 <ul class="box-redes-sociais" aria-label="Redes sociais">
                     <li class="facebook">
                         <a href="#" target="_blank" referrerpolicy="no-referrer"
-                            aria-label="Ir para o Facebook do Necta de Dados"><img src="./img/facebook.svg" alt="Logo do Facebook"></a>
+                            aria-label="Ir para o Facebook do Necta de Dados"><img src="./img/facebook.svg"
+                                alt="Logo do Facebook"></a>
                     </li>
                     <li class="instagram">
-                        <a href="#" target="_blank"
-                            referrerpolicy="no-referrer" aria-label="Ir para o Instagram do Necta de Dados"><img
-                                src="./img/instagram.svg" alt="Logo do Instagram"></a>
+                        <a href="#" target="_blank" referrerpolicy="no-referrer"
+                            aria-label="Ir para o Instagram do Necta de Dados"><img src="./img/instagram.svg"
+                                alt="Logo do Instagram"></a>
                     </li>
                 </ul>
             </div>
@@ -95,12 +96,14 @@
         <section class="container-entenda">
             <div class="text-entenda">
                 <h2>Entenda o Nectar de Dados</h2>
-                <p>O Nectar de Dados é uma solução interativa que conecta dados climáticos e ambientais com a incidência de doenças em diferentes regiões do Brasil.</p>
+                <p>O Nectar de Dados é uma solução interativa que conecta dados climáticos e ambientais com a incidência
+                    de doenças em diferentes regiões do Brasil.</p>
             </div>
 
             <div class="gp-card">
                 <article class="card">
-                    <p>Utiliza dados climáticos como temperatura, umidade e condições do tempo para identificar possíveis riscos à saúde da população. </p>
+                    <p>Utiliza dados climáticos como temperatura, umidade e condições do tempo para identificar
+                        possíveis riscos à saúde da população. </p>
                 </article>
 
                 <article class="card-white">
@@ -112,23 +115,27 @@
                 </article>
             </div>
         </section>
+
+        <section class="container-monitoramento">
+            <h2>Monitoramento Local</h2>
+            <p>Acompanhe as condições climáticas em tempo real e identifique possíveis riscos para a sua região.</p>
+
+            <div class="container-solution">
+                <form id="weather-form">
+                    <input type="text" id="city-input" placeholder="Digite a cidade" autocomplete="off" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <div class="weather-result" id="weather-result"></div>
+
+                <div class="export-buttons" id="export-buttons">
+                    <button id="export-json">Exportar JSON</button>
+                    <button id="export-csv">Exportar CSV</button>
+                    <button id="export-txt">Exportar TXT</button>
+                </div>
+        </section>
     </main>
-    <!-- <section class="container">
-        <main>
-            <form id="weather-form">
-                <input type="text" id="city-input" placeholder="Digite a cidade" autocomplete="off" required>
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
 
-            <div class="weather-result" id="weather-result"></div>
-
-            <div class="export-buttons" id="export-buttons">
-                <button id="export-json">Exportar JSON</button>
-                <button id="export-csv">Exportar CSV</button>
-                <button id="export-txt">Exportar TXT</button>
-            </div>
-        </main>
-    </section> -->
 
 </body>
 

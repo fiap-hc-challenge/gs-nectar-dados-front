@@ -77,7 +77,7 @@ document.getElementById("weather-form").addEventListener("submit", async functio
                 alerta
             };
 
-            exportButtonsDiv.style.display = "block";
+            exportButtonsDiv.style.display = "flex";
 
         } else {
             resultDiv.innerHTML = `<p>Cidade não encontrada.</p>`;
