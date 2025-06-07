@@ -120,6 +120,7 @@ textarea:focus-visible {
     background: #003B30;
     padding: 24px 24px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .contact-info .info-top {
@@ -139,7 +140,7 @@ textarea:focus-visible {
     font-weight: 600;
 }
 
-.contact-info article strong {
+.contact-info article strong,p {
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
