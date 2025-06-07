@@ -21,15 +21,23 @@ document.getElementById("weather-form").addEventListener("submit", async functio
 
             // 💡 Condições de risco para populações vulneráveis
             if (temperatura >= 30 && umidade >= 70 && clima.includes("rain")) {
-                alerta = "⚠️ Risco alto de proliferação de mosquitos como o da dengue. Evite acúmulo de água.";
+                alerta = "🦟 Condições favoráveis à proliferação do Aedes aegypti. Recomendam-se ações de monitoramento de criadouros, campanhas de conscientização e intensificação da vigilância para arboviroses como dengue, zika e chikungunya.";
             } else if (temperatura <= 15 && umidade < 40) {
-                alerta = "⚠️ Risco de doenças respiratórias por clima seco e frio. Hidrate-se e evite locais fechados.";
+                alerta = "❄️ Clima frio e seco: aumento de síndromes respiratórias. Indica-se reforço em unidades sentinela, distribuição de material informativo e ampliação de acesso à vacinação contra gripe e doenças respiratórias.";
             } else if (clima.includes("rain") && umidade >= 80) {
-                alerta = "🌧️ Atenção com enchentes e doenças transmitidas pela água em áreas vulneráveis.";
+                alerta = "🌧️ Risco elevado de doenças de veiculação hídrica, como leptospirose, hepatite A e diarreias infecciosas. Sugerem-se ações de saneamento emergencial, alerta em áreas de alagamento e orientações sobre higiene pós-enchente.";
             } else if (temperatura > 35) {
-                alerta = "⚠️ Onda de calor: risco de desidratação e insolação, especialmente para crianças e idosos.";
+                alerta = "🌡️ Onda de calor intensa: aumento de casos de desidratação, insolação e agravamento de comorbidades. Recomendam-se intervenções em centros de acolhimento, distribuição de água e campanhas de prevenção para populações vulneráveis.";
+            } else if (temperatura >= 25 && umidade >= 60 && clima.includes("nublado")) {
+                alerta = "🌫️ Ambientes úmidos e pouca ventilação favorecem surtos de doenças alérgicas e respiratórias (asma, rinite). Estratégias de controle ambiental e orientação em escolas e postos de saúde são recomendadas.";
+            } else if (temperatura >= 28 && umidade <= 30) {
+                alerta = "🔥 Tempo quente e seco: risco de agravamento de quadros respiratórios, irritações oculares e desidratação leve. Indica-se reforço na rede de atenção primária e ampliação da distribuição de insumos como soro fisiológico.";
+            } else if (temperatura < 10) {
+                alerta = "🧊 Frio extremo: propício ao aumento de internações por doenças respiratórias agudas. Recomendam-se campanhas de vacinação, abrigos emergenciais e monitoramento de populações em situação de rua.";
+            } else if (clima.includes("neblina") || clima.includes("nevoeiro")) {
+                alerta = "🌫️ Alta umidade com baixa temperatura: condições críticas para surtos respiratórios e infecções oportunistas. Sugere-se atenção especial a grupos de risco e protocolos de triagem nas unidades de saúde.";
             } else {
-                alerta = "✅ Sem riscos graves identificados no momento.";
+                alerta = "✅ Nenhuma condição crítica identificada. Reforça-se a importância da vigilância contínua e da coleta de dados regionais para monitoramento epidemiológico.";
             }
 
             resultDiv.innerHTML = `
