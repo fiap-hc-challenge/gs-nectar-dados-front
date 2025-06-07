@@ -3,6 +3,8 @@ header {
     box-shadow: none;
 }
 
+
+/*------------------- hero -------------------*/
 .hero{
     background-image: url(../img/fundo-index-mobile.png);
     background-repeat: no-repeat;
@@ -61,7 +63,89 @@ header {
 
 
 
+/*------------------- seção entenda -------------------*/
+.container-entenda{
+    background-color: #003B30;
+    padding: 64px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    justify-content: center;
+}
 
+.container-entenda .text-entenda{
+    text-align: center;
+}
+
+.container-entenda .text-entenda h2{
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.container-entenda .text-entenda p{
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container-entenda .gp-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.container-entenda .gp-card .card{
+    border: 2px solid #fff;
+    border-radius: 16px;
+    padding: 12px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-entenda .gp-card .card p{
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    
+}
+
+.container-entenda .gp-card .card-white{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 12px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-entenda .gp-card .card-white p{
+    color: #003B30;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    
+}
+
+.container-entenda .gp-card .card:hover, .card-white:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    
+}
 
 
 /* * {
