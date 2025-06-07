@@ -276,6 +276,13 @@ footer p{
 }
 
 
+/*----------------- media queries 992px ---------------*/
+@media (min-width: 992px) {
+    footer{
+        padding: 10rem 12rem 20px;
+    }
+}
+
 /*----------------- media queries 1300px ---------------*/
 @media (min-width: 1300px) {
     .menu ul {
