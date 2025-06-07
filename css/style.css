@@ -15,7 +15,7 @@ html {
 }
 
 header {
-    background-color: #00775F;
+    background-color: #003B30;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 999;
@@ -69,7 +69,7 @@ header {
 }
 
 .menu-mobile {
-    background: #00775F;
+    background: #003B30;
     height: 100%;
     position: fixed;
     top: 0;
