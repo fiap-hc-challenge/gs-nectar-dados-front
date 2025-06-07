@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-contact.css">
     <script src="../js/index.js" defer></script>
+    <script src="../js/central.js" defer></script>
 
     <!-- Ícones do Google Material -->
     <link rel="stylesheet"
@@ -132,43 +133,60 @@
         </section>
 
 
-        <section class="container-faq ativado" id="container-tele" role="tabpanel" aria-labelledby="tele">
+        <section class="container-faq" id="container-tele" role="tabpanel" aria-labelledby="tele">
             <fieldset>
-                <legend>Perguntas frequentes</legend>
+                <legend>FAQ – Perguntas Frequentes</legend>
                 <ul class="faq">
                     <!-- perguntas e respostas -->
                     <li>
                         <input type="radio" name="acordeon" id="primeiro">
-                        <label for="primeiro" aria-controls="resposta1" aria-expanded="false">O que é a
-                            teleconsulta?</label>
+                        <label for="primeiro" aria-controls="resposta1" aria-expanded="false">O que é essa plataforma?</label>
                         <div class="resposta" id="resposta1">
-                            <p>É uma consulta feita por vídeo, com o mesmo cuidado e atenção de uma consulta
-                                presencial. Você conversa com seu profissional de saúde de forma segura, sem sair de
-                                casa.</p>
+                            <p>É uma ferramenta interativa que apresenta dados climáticos e ambientais com foco em riscos urbanos, ajudando a população a compreender e se prevenir contra situações como calor extremo, enchentes e qualidade do ar ruim.</p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name="acordeon" id="segundo">
-                        <label for="segundo" aria-controls="resposta2" aria-expanded="false">Preciso pagar pela
-                            teleconsulta?</label>
+                        <label for="segundo" aria-controls="resposta2" aria-expanded="false">Quem pode usar essa plataforma?</label>
                         <div class="resposta" id="resposta2">
-                            <p>Não. A teleconsulta é gratuita para os pacientes do IMREA e do Hospital das Clínicas.
+                            <p>Qualquer pessoa! A interface é intuitiva e pensada para ser acessível a todos, incluindo moradores de áreas vulneráveis, estudantes, profissionais da saúde e gestores públicos.
                             </p>
                         </div>
                     </li>
                     <li>
                         <input type="radio" name="acordeon" id="terceiro">
-                        <label for="terceiro" aria-controls="resposta3" aria-expanded="false">Quais profissionais
-                            fazem a teleconsulta?</label>
+                        <label for="terceiro" aria-controls="resposta3" aria-expanded="false">Quais tipos de riscos são monitorados?</label>
                         <div class="resposta" id="resposta3">
-                            <p>Nutricionistas, psicólogos, terapeutas ocupacionais e outros profissionais
-                                especializados no seu tratamento.</p>
+                            <p>A plataforma avalia riscos como ondas de calor, alagamentos, umidade excessiva, clima seco e situações que favorecem doenças respiratórias ou de veiculação hídrica.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="quarto">
+                        <label for="quarto" aria-controls="resposta4" aria-expanded="false">De onde vêm os dados usados?</label>
+                        <div class="resposta" id="resposta4">
+                            <p>Os dados são obtidos a partir de fontes públicas e confiáveis, como APIs meteorológicas e bases de dados ambientais.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="quinto">
+                        <label for="quinto" aria-controls="resposta5" aria-expanded="false">A plataforma alerta sobre emergências?</label>
+                        <div class="resposta" id="resposta5">
+                            <p>Ela não substitui sistemas oficiais de alerta, mas oferece orientações preventivas com base nas condições atuais, auxiliando na preparação e resposta a eventos climáticos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="sexto">
+                        <label for="sexto" aria-controls="resposta6" aria-expanded="false">Como essa iniciativa ajuda as cidades?</label>
+                        <div class="resposta" id="resposta6">
+                            <p>Ao tornar dados acessíveis, promove conscientização, contribui para ações preventivas e fortalece o planejamento urbano voltado à resiliência climática.</p>
                         </div>
                     </li>
                 </ul>
             </fieldset>
         </section>
     </main>
+
+    <div id="mensagem-flutuante">Formulário armazenado dentro do localStorage</div>
 </body>
 
 </html>
