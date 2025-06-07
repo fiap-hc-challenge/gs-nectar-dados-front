@@ -42,7 +42,7 @@
     font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .obj .card-obj{
@@ -64,6 +64,12 @@
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.obj .card-obj article:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
 .obj .card-obj article h3{
     font-size: 1.8rem;
     color: #fff;
@@ -81,7 +87,7 @@
 
 /*----------------- seção equipe --------------*/
 .team {
-    margin: 48px 20px;
+    margin: 64px 20px;
 }
 
 .team h2{
@@ -143,7 +149,13 @@
 }
 
 .team .gp-card .card .card-icons img{
-    width: 28px;
+    width: 32px;
+}
+
+.team .gp-card .card .card-icons img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -168,7 +180,7 @@
 /*----------------- media querie 992px --------------*/
 @media (min-width: 992px){
     .obj .card-obj article{
-        max-width: 220px;
+        max-width: 240px;
         height: 240px;
     }
 

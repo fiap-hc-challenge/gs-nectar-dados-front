@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-contact.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../js/central.js" defer></script>
+
+    <!-- Ícones do Google Material -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Central de Ajuda Nectar de Dados</title>
+</head>
+
+<body>
+    <header>
+
+
+        <!-- Cabeçalho principal -->
+        <div class="header-content">
+            <div class="start-header">
+                <!-- Logos -->
+                <div class="img-logo">
+                    <img src="../img/logo.svg" alt="Logo do Nectar de Dados">
+                </div>
+
+                <!-- Menu de navegação desktop -->
+                <nav class="menu" id="inicio" aria-label="Menu principal">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre nós</a></li>
+                        <li><a id="active" href="#">Central de Ajuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Botão de abrir menu mobile -->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <span class="material-symbols-outlined icon" aria-label="Abrir menu">menu</span>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">close</span>
+                </div>
+                <nav aria-label="Menu mobile">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre nós</a></li>
+                        <li><a id="active" href="#">Central de Ajuda</a></li>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+
+            <!-- Redes sociais no topo -->
+            <div class="topo">
+                <ul class="box-redes-sociais" aria-label="Redes sociais">
+                    <li class="facebook">
+                        <a href="#" target="_blank" referrerpolicy="no-referrer"
+                            aria-label="Ir para o Facebook do Necta de Dados"><img src="../img/facebook.svg"
+                                alt="Logo do Facebook"></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#" target="_blank" referrerpolicy="no-referrer"
+                            aria-label="Ir para o Instagram do Necta de Dados"><img src="../img/instagram.svg"
+                                alt="Logo do Instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contact-form">
+            <div class="text-contact">
+                <h2>ENTRE EM CONTATO</h2>
+                <h1>Está com dúvida ou precisa de ajuda referente ao projeto.</h1>
+            </div>
+
+            <form novalidate>
+                <fieldset>
+                    <legend>Nos envie uma mensagem</legend>
+                    <div class="dados">
+                        <label for="idNome">Nome<strong>*</strong></label>
+                        <input type="text" name="nome" id="idNome" minlength="3" maxlength="100" required type="text">
+                    </div>
+                    <div class="dados">
+                        <label for="idEmail">E-mail<strong>*</strong></label>
+                        <input type="email" name="email" id="idEmail" minlength="5" maxlength="50" required
+                            type="email">
+                    </div>
+                    <div class="dados">
+                        <label for="idTel">Telefone<strong>*</strong></label>
+                        <input type="tel" name="tel" id="idTel" minlength="10" maxlength="15" required type="tel"
+                            pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">
+                    </div>
+                    <div class="dados">
+                        <label for="mensagem"></label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..."
+                            required></textarea>
+                    </div>
+                    <div class="dados">
+                        <button type="reset" id="btnReset">Limpar Formulário</button>
+                        <button type="submit" id="btnEnviar">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <article>
+                <div class="info-top">
+                    <img src="../img/phone.png" alt="Ícone de telefone">
+                    <h3>Número de Telefone</h3>
+                </div>
+                <p>(11) 99999-9999</p>
+            </article>
+
+            <article>
+                <div class="info-top">
+                    <img src="../img/email.png" alt="Ícone de email">
+                    <h3>E-mail para contato</h3>
+                </div>
+                <p>contato@exemplo.com</p>
+            </article>
+        </section>
+
+
+        <section class="container-faq" id="container-tele" role="tabpanel" aria-labelledby="tele">
+            <fieldset>
+                <legend>FAQ – Perguntas Frequentes</legend>
+                <ul class="faq">
+                    <!-- perguntas e respostas -->
+                    <li>
+                        <input type="radio" name="acordeon" id="primeiro">
+                        <label for="primeiro" aria-controls="resposta1" aria-expanded="false">O que é essa plataforma?</label>
+                        <div class="resposta" id="resposta1">
+                            <p>É uma ferramenta interativa que apresenta dados climáticos e ambientais com foco em riscos urbanos, ajudando a população a compreender e se prevenir contra situações como calor extremo, enchentes e qualidade do ar ruim.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="segundo">
+                        <label for="segundo" aria-controls="resposta2" aria-expanded="false">Quem pode usar essa plataforma?</label>
+                        <div class="resposta" id="resposta2">
+                            <p>Qualquer pessoa! A interface é intuitiva e pensada para ser acessível a todos, incluindo moradores de áreas vulneráveis, estudantes, profissionais da saúde e gestores públicos.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="terceiro">
+                        <label for="terceiro" aria-controls="resposta3" aria-expanded="false">Quais tipos de riscos são monitorados?</label>
+                        <div class="resposta" id="resposta3">
+                            <p>A plataforma avalia riscos como ondas de calor, alagamentos, umidade excessiva, clima seco e situações que favorecem doenças respiratórias ou de veiculação hídrica.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="quarto">
+                        <label for="quarto" aria-controls="resposta4" aria-expanded="false">De onde vêm os dados usados?</label>
+                        <div class="resposta" id="resposta4">
+                            <p>Os dados são obtidos a partir de fontes públicas e confiáveis, como APIs meteorológicas e bases de dados ambientais.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="quinto">
+                        <label for="quinto" aria-controls="resposta5" aria-expanded="false">A plataforma alerta sobre emergências?</label>
+                        <div class="resposta" id="resposta5">
+                            <p>Ela não substitui sistemas oficiais de alerta, mas oferece orientações preventivas com base nas condições atuais, auxiliando na preparação e resposta a eventos climáticos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="acordeon" id="sexto">
+                        <label for="sexto" aria-controls="resposta6" aria-expanded="false">Como essa iniciativa ajuda as cidades?</label>
+                        <div class="resposta" id="resposta6">
+                            <p>Ao tornar dados acessíveis, promove conscientização, contribui para ações preventivas e fortalece o planejamento urbano voltado à resiliência climática.</p>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+    </main>
+
+    <div id="mensagem-flutuante">Formulário armazenado dentro do localStorage</div>
+</body>
+
+</html>
