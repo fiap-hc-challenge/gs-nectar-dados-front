@@ -139,7 +139,7 @@ textarea:focus-visible {
     font-weight: 600;
 }
 
-.contact-info article p {
+.contact-info article strong {
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
