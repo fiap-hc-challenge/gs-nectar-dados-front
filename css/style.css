@@ -138,6 +138,45 @@ header {
 }
 
 
+/*----------------- footer ---------------*/
+footer {
+    background-color: #003B30;
+    color: #fff;
+    padding: 40px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    color: #fff;
+    font-size: 1.4rem;
+    text-underline-offset: 4px;
+}
+
+footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
 /*----------------- media queries 768px ---------------*/
 
 @media (min-width: 768px) {
@@ -203,7 +242,7 @@ header {
 
     .menu #active {
         text-decoration: underline;
-        text-underline-offset: 8px;/* padrão */
+        text-underline-offset: 8px;
         transition: text-underline-offset 0.3s ease;
     }
 
@@ -220,7 +259,7 @@ header {
 
     .menu ul li a:hover {
         text-decoration: underline;
-        text-underline-offset: 8px;/* padrão */
+        text-underline-offset: 8px;
         transition: text-underline-offset 0.3s ease;
     }
 
