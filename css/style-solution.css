@@ -7,6 +7,7 @@
 body, html {
     height: 100%;
     background: #e0f7fa;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -17,7 +18,9 @@ body, html {
 }
 
 main {
-    min-height: 60vh;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    min-height: 40vh;
     width: 90vw;
     max-width: 500px;
     background-color: #f7f7f7;
@@ -29,6 +32,7 @@ main {
     gap: 20px;
 }
 
+/* Formulário */
 form {
     display: flex;
     justify-content: space-between;
@@ -59,6 +63,7 @@ form button:hover {
     background-color: #0097a7;
 }
 
+/* Resultado do Clima */
 .weather-result {
     text-align: center;
     padding: 20px;
@@ -76,6 +81,7 @@ form button:hover {
     margin-top: 5px;
 }
 
+/* Alerta de saúde */
 .alerta {
     margin-top: 20px;
     padding: 15px;
@@ -84,4 +90,30 @@ form button:hover {
     background-color: #fff3cd;
     color: #856404;
     border: 1px solid #ffeeba;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Botões de exportação */
+.export-buttons {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.export-buttons button {
+    padding: 10px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.export-buttons button:hover {
+    background-color: #388e3c;
 }

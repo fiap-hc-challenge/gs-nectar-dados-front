@@ -1,11 +1,29 @@
+const form = document.getElementById("weather-form");
+const resultDiv = document.getElementById("weather-result");
+const exportButtonsDiv = document.getElementById("export-buttons");
+
+const jsonBtn = document.getElementById("export-json");
+const csvBtn = document.getElementById("export-csv");
+const txtBtn = document.getElementById("export-txt");
+
+let dadosExportar = null;
+
+function baixarArquivo(nome, conteudo, tipo) {
+    const blob = new Blob([conteudo], { type: tipo });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = nome;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
 document.getElementById("weather-form").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const city = document.getElementById("city-input").value.trim();
     const apiKey = "0bd88d602125f912e04266d35d8437e1";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=pt_br&units=metric`;
-
-    const resultDiv = document.getElementById("weather-result");
 
     try {
         const response = await fetch(url);
@@ -14,12 +32,12 @@ document.getElementById("weather-form").addEventListener("submit", async functio
         if (data.cod === 200) {
             const temperatura = data.main.temp;
             const umidade = data.main.humidity;
-            const clima = data.weather[0].main.toLowerCase(); // Ex: rain, clear, clouds
+            const clima = data.weather[0].main.toLowerCase();
             const descricao = data.weather[0].description;
 
             let alerta = "";
 
-            // 💡 Condições de risco para populações vulneráveis
+            // Condições de risco para populações vulneráveis
             if (temperatura >= 30 && umidade >= 70 && clima.includes("rain")) {
                 alerta = "🦟 Condições favoráveis à proliferação do Aedes aegypti. Recomendam-se ações de monitoramento de criadouros, campanhas de conscientização e intensificação da vigilância para arboviroses como dengue, zika e chikungunya.";
             } else if (temperatura <= 15 && umidade < 40) {
@@ -48,11 +66,59 @@ document.getElementById("weather-form").addEventListener("submit", async functio
                 <p><strong>Vento:</strong> ${data.wind.speed} km/h</p>
                 <div class="alerta"><strong>${alerta}</strong></div>
             `;
+
+            dadosExportar = {
+                cidade: data.name,
+                pais: data.sys.country,
+                temperatura,
+                clima: descricao,
+                umidade,
+                vento: data.wind.speed,
+                alerta
+            };
+
+            exportButtonsDiv.style.display = "block";
+
         } else {
             resultDiv.innerHTML = `<p>Cidade não encontrada.</p>`;
+            exportButtonsDiv.style.display = "none";
         }
     } catch (error) {
         resultDiv.innerHTML = `<p>Erro ao buscar dados do clima.</p>`;
+        exportButtonsDiv.style.display = "none";
         console.error(error);
     }
 });
+
+jsonBtn.onclick = () => {
+    if (dadosExportar) {
+        const conteudo = JSON.stringify(dadosExportar, null, 2);
+        baixarArquivo("dados_climaticos.json", conteudo, "application/json");
+    }
+};
+
+csvBtn.onclick = () => {
+    if (dadosExportar) {
+        const linhas = [
+            "Cidade,País,Temperatura,Clima,Umidade,Vento,Alerta",
+            `"${dadosExportar.cidade}","${dadosExportar.pais}",${dadosExportar.temperatura},"${dadosExportar.clima}",${dadosExportar.umidade},${dadosExportar.vento},"${dadosExportar.alerta.replace(/"/g, '""')}"`
+        ];
+        const conteudo = linhas.join("\n");
+        baixarArquivo("dados_climaticos.csv", conteudo, "text/csv");
+    }
+};
+
+txtBtn.onclick = () => {
+    if (dadosExportar) {
+        const conteudo = `
+            Cidade: ${dadosExportar.cidade}
+            País: ${dadosExportar.pais}
+            Temperatura: ${dadosExportar.temperatura}°C
+            Clima: ${dadosExportar.clima}
+            Umidade: ${dadosExportar.umidade}%
+            Vento: ${dadosExportar.vento} km/h
+            Alerta: ${dadosExportar.alerta}
+        `.trim();
+        baixarArquivo("dados_climaticos.txt", conteudo, "text/plain");
+    }
+};
