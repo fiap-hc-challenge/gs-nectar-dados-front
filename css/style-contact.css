@@ -1,4 +1,4 @@
-.contact-form{
+.contact-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,17 +9,17 @@
     position: relative;
 }
 
-.contact-form .text-contact{
+.contact-form .text-contact {
     padding-top: 80px;
 }
 
 
-.contact-form .text-contact h2{
+.contact-form .text-contact h2 {
     color: #91918F;
     font-weight: 600;
 }
 
-.contact-form .text-contact h1{
+.contact-form .text-contact h1 {
     font-weight: 600;
     max-width: 300px;
     font-size: 2rem;
@@ -27,7 +27,7 @@
 
 /*----------------- form -----------------*/
 
-.contact-form form{
+.contact-form form {
     position: absolute;
     top: 260px;
     background: #fff;
@@ -37,48 +37,49 @@
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form form fieldset{
+.contact-form form fieldset {
     border: none;
 }
 
-.contact-form form fieldset legend{
+.contact-form form fieldset legend {
     font-size: 1.6rem;
     font-weight: 600;
     color: #000;
 }
 
-.contact-form form fieldset .dados{
+.contact-form form fieldset .dados {
     display: flex;
     flex-direction: column;
     margin: 12px 0;
 }
 
-.contact-form form fieldset .dados label{
+.contact-form form fieldset .dados label {
     font-size: 1.2rem;
 }
 
-.contact-form form fieldset .dados label strong{
+.contact-form form fieldset .dados label strong {
     color: #00775F;
 }
 
-.contact-form form fieldset .dados input{
+.contact-form form fieldset .dados input {
     border: none;
     border-bottom: 2px solid #91918F;
     padding: 4px;
 }
 
-.contact-form form fieldset .dados textarea{
+.contact-form form fieldset .dados textarea {
     padding: 8px;
     border: 2px solid #91918F;
     border-radius: 8px;
     resize: none;
 }
 
-.contact-form form fieldset .dados input:focus-visible, textarea:focus-visible {
+.contact-form form fieldset .dados input:focus-visible,
+textarea:focus-visible {
     outline: #00775F auto 1px;
 }
 
-.contact-form form fieldset .dados #btnReset{
+.contact-form form fieldset .dados #btnReset {
     border: none;
     background: transparent;
     color: #00775F;
@@ -88,7 +89,7 @@
     text-underline-offset: 4px;
 }
 
-.contact-form form fieldset .dados #btnEnviar{
+.contact-form form fieldset .dados #btnEnviar {
     background: #00775F;
     color: #fff;
     width: 50%;
@@ -104,39 +105,39 @@
 
 
 /*----------------- contact info -----------------*/
-.contact-info{
+.contact-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 380px 0 24px;
+    padding: 200px 0 24px;
     gap: 16px;
 }
 
-.contact-info article{
+.contact-info article {
     background: #003B30;
     padding: 24px 24px;
     border-radius: 8px;
 }
 
-.contact-info .info-top{
+.contact-info .info-top {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 16px;
 }
 
-.contact-info .info-top img{
+.contact-info .info-top img {
     width: 28px;
 }
 
-.contact-info .info-top h3{
+.contact-info .info-top h3 {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.contact-info article p{
+.contact-info article p {
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
@@ -144,25 +145,138 @@
 }
 
 
+
+/*----------------- seção faq -----------------*/
+/*----------------------------- seção perguntas e respostas --------------------*/
+
+.container-faq{
+    padding: 100px 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container-faq fieldset{
+    border: none;
+    
+}
+
+.container-faq legend{
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #00775F;
+}
+
+.faq{
+    width: 100%;
+    list-style: none;
+}
+
+
+.faq li{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #9e9c9c;
+    border-radius: 8px;
+}
+
+.faq li label{
+    padding: 15px 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #565246;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq li label:hover{
+    background-color: #e0dcdc;
+}
+
+.faq li label:focus{
+    outline: 2px solid #000000;
+}
+
+.faq li label span{
+    display: inline-block;
+    padding: 8px;
+    background-color: #003B30;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.faq li label::before{
+    content: url(../img/arrow-drop.png);
+    margin-right: 10px;
+    font-size: 2.4rem;
+}
+
+.faq input[type="radio"]{
+    display: none;
+}
+
+.faq .resposta{
+    padding: 0 14px;
+    background-color: #fff;
+    line-height: 2em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s, padding .3s;
+}
+
+.faq .resposta p{
+    font-size: 1.8rem;
+    color: #606267;
+}
+
+.faq input[type="radio"]:checked + label{
+    background-color: #EBEBEB;
+    color: #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+.faq input[type="radio"]:checked + label::before{
+    content: url(../img/arrow-up.png);
+}
+
+
+.faq input[type="radio"]:checked + label + .resposta{
+    max-height: 400px;
+    padding: 10px 15px 20px;
+    background-color: #EBEBEB;
+    color: #606267;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+
 /*----------------- medie querie 768px -----------------*/
 @media (min-width: 768px) {
-    .contact-form{
+    .contact-form {
         justify-content: space-between;
         padding: 10% 15% 0;
         min-height: 350px;
     }
 
-    .contact-form .text-contact h1{
+    .contact-form .text-contact h1 {
         max-width: 320px;
         font-size: 2.4rem;
     }
 
-    .contact-form form{
+    .contact-form form {
         right: 5%;
         top: 140px;
     }
 
-    .contact-info{
+    .contact-info {
         padding: 350px 0 24px;
     }
 }
@@ -170,24 +284,57 @@
 
 /*----------------- media querie 992px -----------------*/
 @media (min-width: 992px) {
-    .contact-form{
+    .contact-form {
         justify-content: space-between;
-        padding: 10% 200px 0;
+        padding: 10% 150px 0;
         min-height: 350px;
     }
 
-    .contact-form form{
-        right: 300px;
+    .contact-form form {
+        right: 200px;
         top: 140px;
         width: 350px;
         padding: 24px;
     }
 
-    .contact-form .text-contact{
-    padding-top: 40px;
+    .contact-form .text-contact {
+        padding-top: 35px;
+    }
+
+    .contact-info {
+        padding: 350px 0 24px;
+    }
 }
 
-    .contact-info{
-        padding: 350px 0 24px;
+
+
+/*----------------- media querie 1300px -----------------*/
+@media (min-width: 1300px) {
+    .contact-form {
+        padding: 10% 250px 0;
+    }
+
+    .contact-form form {
+        right: 300px;
+    }
+
+    .contact-form .text-contact {
+        padding-top: 20px;
+    }
+}
+
+
+/*----------------- media querie 1600px -----------------*/
+@media (min-width: 1600px) {
+    .contact-form {
+        padding: 8% 450px 0;
+    }
+
+    .contact-form form {
+        right: 450px;
+    }
+
+    .contact-form .text-contact {
+        padding-top: 0px;
     }
 }
