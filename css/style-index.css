@@ -150,6 +150,11 @@ header {
 
 
 /* ------------------- Formulário ---------------- */
+.container-monitoramento{
+    margin: 5rem 0;
+}
+
+
 .container-monitoramento h2 {
     color: #003B30;
     font-size: 2.4rem;
@@ -162,6 +167,7 @@ header {
     color: #003B30;
     font-size: 1.6rem;
     text-align: center;
+    padding: 0 20px;
     padding-bottom: 24px;
     max-width: 500px;
     margin: 0 auto;
