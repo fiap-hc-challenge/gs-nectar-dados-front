@@ -110,8 +110,9 @@ textarea:focus-visible {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 200px 0 24px;
+    padding: 240px 0 24px;
     gap: 16px;
+    position: relative;
 }
 
 .contact-info article {
@@ -142,6 +143,45 @@ textarea:focus-visible {
     font-size: 1.4rem;
     text-align: center;
     font-weight: 300;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+
+
+/*-------------------- aviso flutuante ------------------------*/
+#mensagem-flutuante {
+    color: #fff;
+    background-color: #003B30;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+    z-index: 1000;
+    pointer-events: none; 
+}
+
+#mensagem-flutuante.mostrar {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+
+
+/*----------------- mensagem de erro ------------------------*/
+
+.erro {
+    font-size: 1.2rem;
+    display: block;
+    color: red;
 }
 
 
@@ -150,14 +190,13 @@ textarea:focus-visible {
 /*----------------------------- seção perguntas e respostas --------------------*/
 
 .container-faq{
-    padding: 100px 12px;
-    max-width: 700px;
+    padding: 56px 12px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container-faq fieldset{
     border: none;
-    
 }
 
 .container-faq legend{
@@ -165,20 +204,23 @@ textarea:focus-visible {
     margin-bottom: 24px;
     text-align: center;
     font-size: 2.4rem;
-    color: #00775F;
+    color: #003B30;
 }
 
 .faq{
     width: 100%;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
 }
 
 
 .faq li{
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid #9e9c9c;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .faq li label{
@@ -188,7 +230,7 @@ textarea:focus-visible {
     background-color: #fff;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     color: #565246;
-    border-radius: 12px;
+    border-radius: 5px;
 
     display: flex;
     align-items: center;
@@ -201,15 +243,6 @@ textarea:focus-visible {
 
 .faq li label:focus{
     outline: 2px solid #000000;
-}
-
-.faq li label span{
-    display: inline-block;
-    padding: 8px;
-    background-color: #003B30;
-    color: #fff;
-    border-radius: 8px;
-    margin-right: 10px;
 }
 
 .faq li label::before{
@@ -239,7 +272,8 @@ textarea:focus-visible {
 .faq input[type="radio"]:checked + label{
     background-color: #EBEBEB;
     color: #000000;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .faq input[type="radio"]:checked + label::before{
@@ -252,10 +286,17 @@ textarea:focus-visible {
     padding: 10px 15px 20px;
     background-color: #EBEBEB;
     color: #606267;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
 }
 
 
+
+/*----------------- media querie 320px -----------------*/
+@media (max-width: 320px) {
+    .contact-info {
+    padding: 400px 0 24px;
+}
+}
 
 
 /*----------------- medie querie 768px -----------------*/
@@ -303,6 +344,16 @@ textarea:focus-visible {
 
     .contact-info {
         padding: 350px 0 24px;
+    }
+
+    
+    .faq{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .faq li{
+        width: 40%;
     }
 }
 
