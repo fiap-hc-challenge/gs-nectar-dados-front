@@ -285,6 +285,12 @@ form button:hover {
 }
 
 
+/*------------------- scroll reveal -------------------*/
+.efeito-hero, .efeito-text, .efeito-card1, .efeito-card2, .efeito-car3, .efeito-form, .efeito-btn{
+    visibility: hidden;
+}
+
+
 
 /*------------------- medie querie 768px -------------------*/
 @media (min-width: 768px) {
