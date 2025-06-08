@@ -13,7 +13,7 @@ revelar.reveal('.efeito-btn',
     {
         duration: 2000,
         distance: '200px',
-        delay: 1000,
+        delay: 500,
         reset: false
     }
 )
